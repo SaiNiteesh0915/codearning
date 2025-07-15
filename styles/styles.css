@@ -266,3 +266,37 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Hide hamburger icon on larger screens */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
+/* Show hamburger menu only on mobile */
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    background-color: #1e3a8a;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
