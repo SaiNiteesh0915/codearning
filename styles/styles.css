@@ -126,7 +126,7 @@ h1, h2, h3, h4 {
 
 /* Features Grid */
 .features {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 5rem 2rem; /* top, right, bottom, left */
   background-color: #ffffff;
 }
 
@@ -200,11 +200,11 @@ h1, h2, h3, h4 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
 }
 
-/* About Section */
 .about-section {
   padding: 5rem 2rem;
   background-color: #f8fafc;
   text-align: center;
+  margin-bottom: 4rem; /* ✅ Add this line */
 }
 
 .about-section .container {
