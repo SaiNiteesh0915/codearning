@@ -24,6 +24,22 @@ menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
+const fadeElements = document.querySelectorAll('.fade-in');
+
+function revealOnScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  fadeElements.forEach(el => {
+    const boxTop = el.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
 
 // Future interactivity placeholder
 console.log("CODEARNING script loaded ✅");
