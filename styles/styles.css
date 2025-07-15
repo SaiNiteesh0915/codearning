@@ -257,3 +257,10 @@ footer p {
   gap: 1rem;
   align-items: center;
 }
+
+/* 🔒 Hide mobile menu icon on desktop */
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
