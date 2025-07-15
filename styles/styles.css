@@ -188,6 +188,18 @@ h1, h2, h3, h4 {
   padding: 0 0.5rem;
 }
 
+.module-content {
+  display: none;
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+  max-width: 900px;
+  text-align: center;
+  font-size: 1.15rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+}
+
 /* About Section */
 .about-section {
   padding: 5rem 2rem;
@@ -230,6 +242,47 @@ h1, h2, h3, h4 {
   transform: none;
 }
 
+/* 🔒 Hide mobile menu icon on desktop */
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+#feature-output {
+  margin-bottom: 4rem;
+}
+
+.why-codeearning-section {
+  padding: 5rem 2rem;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.why-codeearning-section .why-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.why-codeearning-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.why-codeearning-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #334155;
+}
+
+
 /* Footer */
 footer {
   text-align: center;
@@ -256,11 +309,4 @@ footer p {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-}
-
-/* 🔒 Hide mobile menu icon on desktop */
-@media (min-width: 769px) {
-  .mobile-menu {
-    display: none !important;
-  }
 }
