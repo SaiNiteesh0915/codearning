@@ -94,13 +94,14 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.05rem;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
   background-color: #1d4ed8;
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Add consistent spacing below About section */
@@ -245,7 +246,6 @@ body {
   line-height: 1.8;
   font-family: 'Inter', 'Segoe UI', sans-serif;
 }
-
 
 /* Footer */
 footer {
