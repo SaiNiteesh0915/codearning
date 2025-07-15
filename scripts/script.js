@@ -18,10 +18,10 @@ navLinkItems.forEach(link => {
 });
 
 const menuToggle = document.getElementById('mobile-menu');
-const navLinksContainer = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav-links');
 
 menuToggle.addEventListener('click', () => {
-  navLinksContainer.classList.toggle('show');
+  navLinks.classList.toggle('show');
 });
 
 
